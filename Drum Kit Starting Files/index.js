@@ -24,16 +24,13 @@ for (var i = 0; i < allDrumPads.length; i++) {
 
     makeSound(buttonInnerHTML);
 
-
   });
 
 }
 
 //DETECT KEYBOARD STROKES
-document.addEventListener("keydown", function() {
-
+document.addEventListener("keydown", function(event) {
   makeSound(event.key)
-
 
 });
 
